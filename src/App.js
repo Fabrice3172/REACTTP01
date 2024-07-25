@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import Affiche from "./Affiche";
+import Body from "./Body";
+import BodyVirginie from "./BodyVirginie";
+import MainBody from "./BodyKieran";
+import MonForm01 from "./MonForm01";
+import MonForm02 from "./MonForm02";
+import MonComp04 from "./MonComp04";
+import MonForm03 from "./MonForm03";
+
+function Comp01(props) {
+  return(<h1>{props.message}</h1>)
+}
 
 function App() {
+  let onCallBack = (e) =>{console.log("App")}
+  
+  /*
+  *
+  */
+  
+  
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+   
+   
+   
+   <div>
+          <MonForm03 />
+          <Comp01 message='Form de saisie V1'/>
+          <MonForm01 />
+          <MonForm02 />
+          
+          <MonComp04 />      
+      </div>
   );
 }
 
